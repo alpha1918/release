@@ -123,7 +123,6 @@
         md5AssetsMap: settings.md5AssetsMap
       });
 
-
       // let launchScene = settings.launchScene;
       let launchScene = 'launch';//getLaunchScene();
 
@@ -147,7 +146,7 @@
     // jsList
     let jsList = settings.jsList;
 
-    let bundledScript = settings.debug ? 'src/project.dev.js' : 'src/project.6ac4c.js';
+    let bundledScript = settings.debug ? 'src/project.dev.js' : 'src/project.7ad32.js';
       if (jsList) {
         jsList = jsList.map(function (x) {
           return 'src/' + x;
@@ -182,7 +181,7 @@
 
 
   if (window.jsb) {
-    require('src/settings.61177.js');
+    require('src/settings.072c4.js');
     require('src/jsb_polyfill.js');
     boot();
     return;
