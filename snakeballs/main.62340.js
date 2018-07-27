@@ -124,29 +124,48 @@
       });
 
       // let launchScene = settings.launchScene;
-      let launchScene = 'launch';//getLaunchScene();
+      // let launchScene = 'launch';//getLaunchScene();
+      //
+      // // load scene
+      // cc.director.loadScene(launchScene, null,
+      //   function () {
+      //     if (cc.sys.isBrowser) {
+      //       // show canvas
+      //       canvas.style.visibility = '';
+      //       let div = document.getElementById('GameDiv');
+      //       if (div) {
+      //         div.style.backgroundImage = '';
+      //       }
+      //     }
+      //     cc.loader.onProgress = null;
+      //     console.log('Success to load scene: ' + launchScene);
+      //   }
+      // );
 
-      // load scene
-      cc.director.loadScene(launchScene, null,
-        function () {
-          if (cc.sys.isBrowser) {
-            // show canvas
-            canvas.style.visibility = '';
-            let div = document.getElementById('GameDiv');
-            if (div) {
-              div.style.backgroundImage = '';
+      cc.director.preloadScene('game', function(){
+        let launchScene = 'launch';//getLaunchScene();
+        // load scene
+        cc.director.loadScene(launchScene, null,
+          function () {
+            if (cc.sys.isBrowser) {
+              // show canvas
+              canvas.style.visibility = '';
+              let div = document.getElementById('GameDiv');
+              if (div) {
+                div.style.backgroundImage = '';
+              }
             }
+            cc.loader.onProgress = null;
+            console.log('Success to load scene: ' + launchScene);
           }
-          cc.loader.onProgress = null;
-          console.log('Success to load scene: ' + launchScene);
-        }
-      );
+        );
+      });
     };
 
     // jsList
     let jsList = settings.jsList;
 
-    let bundledScript = settings.debug ? 'src/project.dev.js' : 'src/project.3a83e.js';
+    let bundledScript = settings.debug ? 'src/project.dev.js' : 'src/project.45249.js';
       if (jsList) {
         jsList = jsList.map(function (x) {
           return 'src/' + x;
@@ -181,7 +200,7 @@
 
 
   if (window.jsb) {
-    require('src/settings.e6377.js');
+    require('src/settings.5bbf5.js');
     require('src/jsb_polyfill.js');
     boot();
     return;
