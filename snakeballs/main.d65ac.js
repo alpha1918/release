@@ -147,6 +147,8 @@
         // load scene
         cc.director.loadScene(launchScene, null,
           function () {
+            console.log('scene loaded');
+            console.log(cc._canvas.width, cc._canvas.height);
             if (cc.sys.isBrowser) {
               // show canvas
               canvas.style.visibility = '';
@@ -165,7 +167,7 @@
     // jsList
     let jsList = settings.jsList;
 
-    let bundledScript = settings.debug ? 'src/project.dev.js' : 'src/project.45249.js';
+    let bundledScript = settings.debug ? 'src/project.dev.js' : 'src/project.f21e2.js';
       if (jsList) {
         jsList = jsList.map(function (x) {
           return 'src/' + x;
@@ -200,7 +202,7 @@
 
 
   if (window.jsb) {
-    require('src/settings.5bbf5.js');
+    require('src/settings.d018d.js');
     require('src/jsb_polyfill.js');
     boot();
     return;
