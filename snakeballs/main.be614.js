@@ -167,7 +167,7 @@
     // jsList
     let jsList = settings.jsList;
 
-    let bundledScript = settings.debug ? 'src/project.dev.js' : 'src/project.f21e2.js';
+    let bundledScript = settings.debug ? 'src/project.dev.js' : 'src/project.9e13d.js';
       if (jsList) {
         jsList = jsList.map(function (x) {
           return 'src/' + x;
@@ -202,7 +202,7 @@
 
 
   if (window.jsb) {
-    require('src/settings.d018d.js');
+    require('src/settings.a867b.js');
     require('src/jsb_polyfill.js');
     boot();
     return;
@@ -214,7 +214,7 @@
 
     let cocos2d = document.createElement('script');
     cocos2d.async = true;
-    cocos2d.src = window._CCSettings.debug ? 'cocos2d-js.js' : 'cocos2d-js-min.5e4a6.js';
+    cocos2d.src = window._CCSettings.debug ? 'cocos2d-js.js' : 'cocos2d-js-min.8db12.js';
 
     let engineLoaded = function () {
       document.body.removeChild(cocos2d);
