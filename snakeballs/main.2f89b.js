@@ -167,7 +167,7 @@
     // jsList
     let jsList = settings.jsList;
 
-    let bundledScript = settings.debug ? 'src/project.dev.js' : 'src/project.9e13d.js';
+    let bundledScript = settings.debug ? 'src/project.dev.js' : 'src/project.94b98.js';
       if (jsList) {
         jsList = jsList.map(function (x) {
           return 'src/' + x;
@@ -202,7 +202,7 @@
 
 
   if (window.jsb) {
-    require('src/settings.92b68.js');
+    require('src/settings.c7310.js');
     require('src/jsb_polyfill.js');
     boot();
     return;
