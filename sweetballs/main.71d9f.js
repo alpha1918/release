@@ -152,7 +152,7 @@
     // jsList
     let jsList = settings.jsList;
 
-    let bundledScript = settings.debug ? 'src/project.dev.js' : 'src/project.3c1e7.js';
+    let bundledScript = settings.debug ? 'src/project.dev.js' : 'src/project.69ab1.js';
       if (jsList) {
         jsList = jsList.map(function (x) {
           return 'src/' + x;
