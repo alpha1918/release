@@ -1,0 +1,1 @@
+{"__type__":"cc.TextAsset","_name":"bgWorker","text":"function timedCount()\r\n{\r\n    postMessage(1);\r\n    setTimeout(\"timedCount()\", 1000 / 60);\r\n}\r\n\r\ntimedCount();"}
